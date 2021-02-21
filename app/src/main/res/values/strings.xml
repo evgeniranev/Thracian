@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Thracian</string>
+    <string name="severozapdna_bulgaria">Северозападна България</string>
+    <string name="severoiztochna_bulgaria">Североизточна България</string>
+    <string name="ugozapadna_bulgaria">Югозападна България</string>
+    <string name="ugoiztochna_bulgaria">Югоизточна България</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
