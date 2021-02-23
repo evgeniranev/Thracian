@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.gridlayout.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondFragment">
+    android:background="@color/black"
+    xmlns:grid="http://schemas.android.com/tools"
+    grid:useDefaultMargins="true"
+app:columnCount="3"    >
 
     <include
         android:id="@+id/oblast_vidin"
-        layout="@layout/item_category2"
+        layout="@layout/item_category_severozapadna"
         android:layout_width="match_parent"
         android:layout_height="0dp"
 
@@ -16,20 +18,26 @@
         app:layout_columnWeight="1"
         app:layout_row="0"
         app:layout_rowWeight="1"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="142dp" />
 
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/oblast_vidin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/oblast_vidin"
+        app:layout_constraintTop_toTopOf="@+id/oblast_vidin" />
     <include
         android:id="@+id/oblast_vraca"
-        layout="@layout/item_category2"
+        layout="@layout/item_category_severozapadna"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_column="0"
         app:layout_columnWeight="1"
         app:layout_row="0"
         app:layout_rowWeight="1"
-        tools:layout_editor_absoluteX="-28dp"
-        tools:layout_editor_absoluteY="389dp" />
+
 
     <TextView
         android:id="@+id/textview_second"
@@ -41,4 +49,4 @@
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.gridlayout.widget.GridLayout>
