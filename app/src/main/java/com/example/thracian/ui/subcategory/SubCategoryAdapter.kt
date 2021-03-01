@@ -1,4 +1,4 @@
-package com.example.thracian.subcategory
+package com.example.thracian.ui.subcategory
 
 import android.util.Log
 import android.view.LayoutInflater
@@ -19,7 +19,7 @@ class SubCategoryAdapter : RecyclerView.Adapter<SubCategoryAdapter.SubCategoryVi
     }
 
     override fun onBindViewHolder(holder: SubCategoryViewHolder, position: Int) {
-        Log.i("blah",list[position] )
+       
         holder.guzView.text = list[position]
     }
 

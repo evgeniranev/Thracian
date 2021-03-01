@@ -1,4 +1,4 @@
-package com.example.thracian.subcategory
+package com.example.thracian.ui.subcategory
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -24,8 +24,10 @@ class SubCategoryFragment : Fragment(R.layout.fragment_subcategory) {
         subcategoryRecyclerView.adapter = subCategoryAdapter
 //        subcategoryRecyclerView.layoutManager = GridLayoutManager(view.context, 2)
         subcategoryRecyclerView.layoutManager = LinearLayoutManager(view.context)
-        var list = arrayListOf("Област Видин","Област Враца","Област Ловеч", "Област Монтана","Област Плевен")
-        subCategoryAdapter.setData(list)
+        val list = arguments?.getStringArrayList("list")
+        if (list != null) {
+            subCategoryAdapter.setData(list)
+        }
         return view
     }
 

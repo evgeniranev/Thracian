@@ -7,9 +7,11 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.thracian.FirstFragment"
+        android:name="com.example.thracian.ui.category.CategoryFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_category">
+
+
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
@@ -17,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.thracian.subcategory.SubCategoryFragment"
+        android:name="com.example.thracian.ui.subcategory.SubCategoryFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_subcategory">
 
@@ -25,31 +27,5 @@
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/thirdFragment"
-        android:name="com.example.thracian.ThirdFragment"
-        android:label="fragment_third2"
-        tools:layout="@layout/fragment_third" >
-        <action
-            android:id="@+id/action_thirdFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/fourthFragment"
-        android:name="com.example.thracian.FourthFragment"
-        android:label="fragment_fourth"
-        tools:layout="@layout/fragment_fourth" >
-        <action
-            android:id="@+id/action_fourthFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/fifhtFragment"
-        android:name="com.example.thracian.FifhtFragment"
-        android:label="fragment_fifht"
-        tools:layout="@layout/fragment_fifht" >
-        <action
-            android:id="@+id/action_fifhtFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
+
 </navigation>
